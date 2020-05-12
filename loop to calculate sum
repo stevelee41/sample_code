@@ -1,0 +1,12 @@
+          var i = 0;
+          var total = 0;
+          while (i <= 8) {
+            total = total += teamAverage[i];
+            i++;
+          };
+
+          var teamPlayers = teamAverage.length;
+          var myAverage = total / teamPlayers;
+          alert (myAverage);
+
+          document.getElementById('myOutputAVG').innerHTML = myAverage;
