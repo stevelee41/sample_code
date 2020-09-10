@@ -3,13 +3,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Hospitalist Hub</title>
-  <meta name="description" content="Hospitalist Hub">
-  <meta name="author" content="SitePoint">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="myStyles.css">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <title>Hello, world!</title>
   <link rel="stylesheet" href="myStyles.css">
 </head>
 
@@ -23,64 +23,70 @@
   <!-- ***************************************************************************************** -->
 
   <div class="container">
-    <h1 class='h1text'>Hospitalist Hub</h1>
-    <a href='clinical_checklists.html'>Clinical checklists </a>
+    <h1 class='h1text'>Checklists and calculators</h1>
 
-    <div class="card mt-3">
-      <div class="card-body">
-        <h3>CVA/TIA checklist</h3>
-          <ul>
-            <li>aspirin</li>
-            <li>telemetry/cardiac monitor</li>
-            <li>echocardiogram</li>
-            <li>statin</li>
-            <li>hemoglobin A1c</li>
-            <li>blood pressure control</li>
-          </ul>
-      </div>
-    </div>  <!-- closing DIV for TIA/CVA checklist card -->
+    <h2>Checklists</h2>
+      <div class="card mt-3">
+        <div class="card-body">
+          <h3>CVA/TIA checklist</h3>
+            <ul>
+              <li>aspirin</li>
+              <li>telemetry/cardiac monitor</li>
+              <li>echocardiogram</li>
+              <li>statin</li>
+              <li>hemoglobin A1c</li>
+              <li>blood pressure control</li>
+            </ul>
+        </div>
+      </div>  <!-- closing DIV for TIA/CVA checklist card -->
 
-    <div class="card mt-3">
-      <div class="card-body">
-        <h3>Lumbar puncture/CSF labs checklist</h3>
-          <ul>
-            <li>cell count with differential</li>
-            <li>glucose</li>
-            <li>protein</li>
-            <li>Gram stain and culture</li>
-            <li>cytology</li>
-            <li>oligoclonal bands</li>
-            <li>Lyme</li>
-            <li>AFB</li>
-            <li>VDRL</li>
-          </ul>
-      </div>
-    </div>  <!-- closing DIV for LP/CSF checklist card -->
+      <div class="card mt-3">
+        <div class="card-body">
+          <h3>Lumbar puncture/CSF labs checklist</h3>
+            <ul>
+              <li>cell count with differential</li>
+              <li>glucose</li>
+              <li>protein</li>
+              <li>Gram stain and culture</li>
+              <li>cytology</li>
+              <li>oligoclonal bands</li>
+              <li>Lyme</li>
+              <li>AFB</li>
+              <li>VDRL</li>
+            </ul>
+        </div>
+      </div>  <!-- closing DIV for LP/CSF checklist card -->
 
-    <div class="card mt-3">
-      <div class="card-body">
-        <h3>Thoracentesis labs checklist</h3>
-          <ul>
-            <li>pH</li>
-            <li>protein</li>
-            <li>albumin</li>
-            <li>LDH</li>
-            <li>glucose</li>
-            <li>cell count with differential</li>
-            <li>Gram stain</li>
-            <li>AFB</li>
-            <li>cytology</li>
-          </ul>
-      </div>
-    </div>  <!-- closing DIV for Thoracentesis checklist card -->
+      <div class="card mt-3">
+        <div class="card-body">
+          <h3>Thoracentesis labs checklist</h3>
+            <ul>
+              <li>pH</li>
+              <li>protein</li>
+              <li>albumin</li>
+              <li>LDH</li>
+              <li>glucose</li>
+              <li>cell count with differential</li>
+              <li>Gram stain</li>
+              <li>AFB</li>
+              <li>cytology</li>
+            </ul>
+        </div>
+      </div>  <!-- closing DIV for Thoracentesis checklist card -->
 
+    <h2>Calculators</h2>
+      <h3>Corrected calcium</h3>
+      <h3>CHA2DS2-VASc</h3>
+
+    <button type="button" class="btn btn-primary btn-lg" onclick='goHome()'>Back to homepage</button>
 
   </div>  <!-- closing DIV for CONTAINER -->
 
 
 
 <!-- *************** JAVASCRIPT ***************  -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script></body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script></body>
+  <script src='hhub.js'></script>
 </html>
