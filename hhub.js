@@ -17,7 +17,7 @@ function goRenal () {
 
 
 function goToAcidBase () {
-  window.location.href = "electrolytes_acid_base.html";
+  window.location.href = "fluids_electrolytes_acid_base.html";
 }
 
 
