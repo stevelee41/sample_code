@@ -3,6 +3,11 @@
   display: block;
 }
 
+
+h3 {
+  font-size: 1.25rem;
+}
+
 .testBackground {
   background-color: lightblue;
 }
