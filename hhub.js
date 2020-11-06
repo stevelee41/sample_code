@@ -26,6 +26,9 @@ function goToPsych () {
   window.location.href = "psychiatry.html";
 }
 
+function goToHematology () {
+  window.location.href = "hematology.html";
+}
 
 function goHome() {
   window.location.href = "index.html";
