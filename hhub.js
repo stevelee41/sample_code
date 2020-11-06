@@ -30,6 +30,10 @@ function goToHematology () {
   window.location.href = "hematology.html";
 }
 
+function goToGI () {
+  window.location.href = "gastroenterology.html";
+}
+
 function goHome() {
   window.location.href = "index.html";
 }
