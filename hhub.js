@@ -10,8 +10,16 @@ function goToCriticalCare () {
   window.location.href = "critical_care_for_hospitalists.html";
 }
 
+function goToID () {
+  window.location.href = "infectious_disease.html";
+}
+
 function goToNeuro () {
   window.location.href = "neurology.html";
+}
+
+function goToPulm () {
+  window.location.href = "pulmonary.html";
 }
 
 function goToRenal () {
