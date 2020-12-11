@@ -2,6 +2,10 @@ function goToChecklists () {
   window.location.href = "clinical_checklists.html";
 }
 
+function goToCOVID19 () {
+  window.location.href = "COVID19.html";
+}
+
 function goToCalculators () {
   window.location.href = "clinical_calculators.html";
 }
