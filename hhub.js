@@ -14,6 +14,10 @@ function goToCriticalCare () {
   window.location.href = "critical_care_for_hospitalists.html";
 }
 
+function goToGI () {
+  window.location.href = "gastroenterology.html";
+}
+
 function goToID () {
   window.location.href = "infectious_disease.html";
 }
