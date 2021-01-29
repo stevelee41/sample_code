@@ -45,7 +45,7 @@
           <input type="text" id="fluidLDH" class="form-control" aria-describedby="fluidLDHUnits">
         </div>
         <div class="col-3">
-          <span id="fluidLDHUnits" class="form-text">g/dL</span>
+          <span id="fluidLDHUnits" class="form-text">U/L</span>
         </div>
       </div>    <!-- closing DIV for FLUID LDH -->
 
@@ -71,7 +71,7 @@
           <input type="text" id="serumLDH" class="form-control" aria-describedby="serumLDHUnits">
         </div>
         <div class="col-3">
-          <span id="serumLDHUnits" class="form-text">g/dL</span>
+          <span id="serumLDHUnits" class="form-text">U/L</span>
         </div>
       </div>    <!-- closing DIV for SERUM LDH -->
 
@@ -84,7 +84,7 @@
           <input type="text" id="upperLDH" class="form-control" aria-describedby="upperLDHUnits">
         </div>
         <div class="col-3">
-          <span id="upperLDHUnits" class="form-text">g/dL</span>
+          <span id="upperLDHUnits" class="form-text">U/L</span>
         </div>
       </div>    <!-- closing DIV for SERUM LDH -->
 
@@ -119,15 +119,19 @@
         let fLDH = Number(document.getElementById('fluidLDH').value);
         let sLDH = Number(document.getElementById('serumLDH').value);
 
-        let userLightsValues = [fProtein, fLDH, sProtein, sLDH];
+        let userLightsValues = [
+            ['Pleural Fluid Protein', fProtein],
+            ['Pleural Fluid LDH', fLDH],
+            ['Serum Protein', sProtein],
+            ['Serum LDH', sLDH]
+          ];
         let i = 0;
 
         /* check to see that entered values are numeric */
 
         for (i=0; i < userLightsValues.length; i++) {
-          alert (userLightsValues[i]);
-          if (isNaN(userLightsValues[i])) {
-            alert ('Please enter a numeric value.');
+          if (isNaN(userLightsValues[i][1])) {
+            alert ('Please enter a numeric value for ' + userLightsValues[i][0]);
           }
         }
 
