@@ -53,3 +53,75 @@ function goToGI () {
 function goHome() {
   window.location.href = "index.html";
 }
+
+/* **************************************************************************
+                      LIGHT'S CRITERIA
+*************************************************************************** */
+function lightsCriteria() {
+  let fProtein = Number(document.getElementById('fluidProtein').value);
+  let sProtein = Number(document.getElementById('serumProtein').value);
+  let fLDH = Number(document.getElementById('fluidLDH').value);
+  let sLDH = Number(document.getElementById('serumLDH').value);
+  let exOutput = '<h4>Pleural fluid is exudate</h4>'
+    + '<br>' + '<p>causes of exudate include:</p>' + '<br>'
+    + '<ul>'
+      + '<li>infection</li>'
+      + '<li>malignancy</li>'
+    + '</ul>';
+  let trOutput = '<h4>Pleural fluid is transudate</h4>'
+    + '<br>' + '<p>causes of transudate include:</p>' + '<br>'
+    + '<ul>'
+      + '<li>CHF</li>'
+      + '<li>cirrhosis</li>'
+      + '<li>nephrotic syndrome</li>'
+    + '</ul>';
+
+
+  let userLightsValues = [
+      ['Pleural Fluid Protein', fProtein],
+      ['Pleural Fluid LDH', fLDH],
+      ['Serum Protein', sProtein],
+      ['Serum LDH', sLDH]
+
+    ];
+  let i = 0;
+
+  /* check that entered values are numeric */
+  for (i=0; i < userLightsValues.length; i++) {
+    if (isNaN(userLightsValues[i][1])) {
+      alert ('Please enter a numeric value for ' + userLightsValues[i][0]);
+    }
+  }
+
+  /* check that entered values for serum protein make sense */
+  if (sProtein < 5 || sProtein > 9) {
+    alert ('Serum protein values are typically between 6 and 8 g/dL');
+  }
+
+  /* check that entered values for serum LDH make sense */
+  if (sLDH < 100 || sLDH > 500) {
+    alert ('Serum LDH values are typically between 140 and 280 U/L');
+  }
+
+
+  /* apply Light's Criteria */
+  if ((fProtein/sProtein)>0.5) {
+    document.getElementById('LightsOutput').innerHTML = exOutput;
+  }
+    else if ((fLDH/sLDH)>0.6) {
+      document.getElementById('LightsOutput').innerHTML = "Pleural fluid is exudate";
+    }
+
+    else {
+      document.getElementById('LightsOutput').innerHTML = trOutput;
+    }
+
+} /* closing for LIGHTS CRITERIA */
+
+
+function clearLightsFields() {
+  document.getElementById('fluidProtein').value="";
+  document.getElementById('serumProtein').value="";
+  document.getElementById('fluidLDH').value="";
+  document.getElementById('serumLDH').value="";
+}  /* closing for CLEAR LIGHTS FIELDS */

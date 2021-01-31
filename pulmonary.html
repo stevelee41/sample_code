@@ -24,7 +24,97 @@
   <div class="container">
     <h1 class='h1text'>Pulmonary</h1>
 
-    <div class="card mt-3">
+
+    <div class="card mt-3">   <!-- opening DIV for LIGHT'S CRITERIA card -->
+      <div class="card-body">
+          <form>
+            <h3 class='mt-2'>Light's Criteria Calculator</h3>
+            <!-- FLUID PROTEIN -->
+            <div class="row g-2 mt-4">
+              <div class="col-5">
+                <label for="fluidProtein" class="col-form-label">Pleural Fluid Protein</label>
+              </div>
+              <div class="col-4">
+                <input type="text" id="fluidProtein" class="form-control" aria-describedby="fluidProteinUnits">
+              </div>
+              <div class="col-3">
+                <span id="fluidProteinUnits" class="form-text">g/dL</span>
+              </div>
+            </div>    <!-- closing DIV for FLUID PROTEIN -->
+
+            <!-- FLUID LDH -->
+            <div class="row g-2 mt-4">
+              <div class="col-5">
+                <label for="fluidLDH" class="col-form-label">Pleural Fluid LDH</label>
+              </div>
+              <div class="col-4">
+                <input type="text" id="fluidLDH" class="form-control" aria-describedby="fluidLDHUnits">
+              </div>
+              <div class="col-3">
+                <span id="fluidLDHUnits" class="form-text">U/L</span>
+              </div>
+            </div>    <!-- closing DIV for FLUID LDH -->
+
+            <!-- SERUM PROTEIN -->
+            <div class="row g-2 mt-4">
+              <div class="col-5">
+                <label for="serumProtein" class="col-form-label">Serum Protein</label>
+              </div>
+              <div class="col-4">
+                <input type="text" id="serumProtein" class="form-control" aria-describedby="serumProteinUnits">
+              </div>
+              <div class="col-3">
+                <span id="serumProteinUnits" class="form-text">g/dL</span>
+              </div>
+            </div>    <!-- closing DIV for SERUM PROTEIN -->
+
+            <!-- SERUM LDH -->
+            <div class="row g-2 mt-4">
+              <div class="col-5">
+                <label for="serumLDH" class="col-form-label">Serum LDH</label>
+              </div>
+              <div class="col-4">
+                <input type="text" id="serumLDH" class="form-control" aria-describedby="serumLDHUnits">
+              </div>
+              <div class="col-3">
+                <span id="serumLDHUnits" class="form-text">U/L</span>
+              </div>
+            </div>    <!-- closing DIV for SERUM LDH -->
+
+            <!-- UPPERLIMIT OF NORMAL LDH -->
+            <div class="row g-2 mt-4">
+              <div class="col-5">
+                <label for="upperLDH" class="col-form-label">UL of normal LDH</label>
+              </div>
+              <div class="col-4">
+                <input type="text" id="upperLDH" class="form-control" aria-describedby="upperLDHUnits">
+              </div>
+              <div class="col-3">
+                <span id="upperLDHUnits" class="form-text">U/L</span>
+              </div>
+            </div>    <!-- closing DIV for SERUM LDH -->
+
+          </form>   <!-- closing DIV for FORM -->
+
+
+          <!-- BUTTON -->
+            <div class='row mt-4'>
+              <button class="btn btn-primary btn-lg col-8 mx-auto" type="button" onclick='lightsCriteria()'>Calculate</button>
+            </div>
+
+            <div class='row mt-2'>
+              <button class="btn btn-outline-secondary btn-lg col-8 mx-auto" type="button" onclick='clearLightsFields()'>Clear fields</button>
+            </div>
+
+          <div class="alert alert-info mt-4" role="alert" id='LightsOutput'>
+            <p>Pleural fluid is:</p>
+          </div>
+
+      </div>
+    </div>  <!-- closing DIV for LIGHT'S CRITERIA card -->
+
+
+    <div class="card mt-3">  <!-- opening DIV for THORACENTESIS LABS CHECKLIST card -->
       <div class="card-body">
         <h3>Thoracentesis labs checklist</h3>
           <ul>
@@ -42,7 +132,8 @@
       </div>
     </div>  <!-- closing DIV for Thoracentesis checklist card -->
 
-    <div class="card mt-3">
+
+    <div class="card mt-3">  <!-- opening DIV for Transdate vs. Exudate card -->
       <div class="card-body">
         <h2>Pleural Effusions</h2>
           <h3>Light's Criteria</h3>
@@ -58,7 +149,7 @@
               <li>malignancy</li>
               <li>pulmonary embolus</li>
               <li>pancreatitis</li>
-              <li>medications</li>              
+              <li>medications</li>
             </ul>
       </div>
     </div>  <!-- closing DIV for Transdate vs. Exudate card -->
@@ -75,5 +166,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>    <script src='hhub.js'></script>
+    <script src='hhub.js'></script>
   </body>
 </html>
