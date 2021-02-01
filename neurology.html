@@ -26,16 +26,38 @@
     <div class="card mt-3">      <!-- opening DIV for CVA/TIA checklist card -->
       <div class="card-body">
         <h3>CVA/TIA initial checklist</h3>
-          <ul>
-            <li>noncontrast CT head</li>
-            <li>aspirin</li>
-            <li>telemetry/cardiac monitor</li>
-            <li>echocardiogram</li>
-            <li>statin</li>
-            <li>hemoglobin A1c</li>
-            <li>blood pressure control</li>
-            <li>carotid ultrasound</li>
-          </ul>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkCT">
+            <label class="form-check-label" for="checkVDRL">noncontrast CT head</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkTele">
+            <label class="form-check-label" for="checkTele">cardiac monitor</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkEcho">
+            <label class="form-check-label" for="checkEcho">echocardiogram</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkCarotid">
+            <label class="form-check-label" for="checkCarotid">carotid ultrasound</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkA1c">
+            <label class="form-check-label" for="checkcheckA1c">hemoglobin A1c</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkASA">
+            <label class="form-check-label" for="checkASA">aspirin</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkStatin">
+            <label class="form-check-label" for="checkStatin">statin</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkBP">
+            <label class="form-check-label" for="checkBP">blood pressure control</label>
+          </div>
       </div>
     </div>  <!-- closing DIV for TIA/CVA checklist card -->
 
@@ -94,94 +116,213 @@
     <div class="card mt-3">   <!-- opening DIV for ALTERED MENTAL STATUS card -->
       <div class="card-body">
         <h3 class='mb-4'>Causes of altered mental status</h3>
-        <p>infection</p>
-          <ul>
-            <li>meningitis</li>
-            <li>encephalitis</li>
-            <li>UTI</li>
-            <li>pneumonia</li>
-          </ul>
-        <p>hypoxia</p>
-        <p>hypercarbia</p>
-        <p>medications and toxins</p>
-          <ul>
-            <li>opiates</li>
-            <li>benzodiazepenes</li>
-            <li>antihistamines</li>
-            <li>antiepileptics</li>
-            <li>muscle relaxants</li>
-            <li>dopamine agonists</li>
-            <li>monoamine oxidase (MAO) inhibitors</li>
-            <li>levodopa</li>
-            <li>steroids</li>
-            <li>fluoroquinolones</li>
-            <li>cephalosporins</li>
-            <li>beta blockers</li>
-            <li>digoxin</li>
-            <li>lithium</li>
-            <li>calcineurin inhibitors</li>
-            <li>remember anticholinergics</li>
-          </ul>
-        <p>CVA</p>
-        <p>trauma related</p>
-          <ul>
-            <li>concussion</li>
-            <li>subarachnoid hematoma</li>
-            <li>epidural hematoma</li>
-          </ul>
-        <p>withdrawal</p>
-          <ul>
-            <li>alcohol</li>
-            <li>benzodiazepenes</li>
-          </ul>
-        <p>hypertensive encephalopathy</p>
-        <p>endocrine and metabolic</p>
-          <ul>
-            <li>Wilson's disease</li>
-            <li>hypo- and hypernatremia</li>
-            <li>hypercalcemia</li>
-            <li>hypermagnesemia</li>
-            <li>hypophospphatemia</li>
-            <li>hypo- and hyperthyroidism</li>
-            <li>hypo- and hypercortisol</li>
-            <li>hypo- and hyperglycemia</li>
-          </ul>
-        <p>hepatic encephalopathy</p>
-        <p>uremic encephalopathy</p>
+          <p>dehydration</p>
+        <!-- dropdown for INFECTION -->
+          <p>
+            <a class="text-decoration-none dropdown-toggle" data-bs-toggle="collapse" href="#collapseInfection" role="button" aria-expanded="false" aria-controls="collapseInfection">
+              infection
+            </a>
+          </p>
+          <div class="collapse" id="collapseInfection">
+            <div class="card card-body border-0">
+              <ul>
+                <li>UTI</li>
+                <li>respiratory tract</li>
+                <li>meningitis</li>
+              </ul>
+            </div>
+          </div>    <!-- closing DIV for INFECTION -->
+
+        <!-- dropdown for MEDICATIONS  -->
+          <p>
+            <a class="text-decoration-none dropdown-toggle" data-bs-toggle="collapse" href="#collapseRx" role="button" aria-expanded="false" aria-controls="collapseRx">
+              medications and toxins
+            </a>
+          </p>
+          <div class="collapse" id="collapseRx">
+            <div class="card card-body border-0">
+              <ul>
+                <li>opiates</li>
+                <li>benzodiazepenes</li>
+                <li>anticholinergics</li>
+                <li>antihistamines</li>
+                <li>antiepileptics</li>
+                <li>muscle relaxants</li>
+                <li>dopamine agonists</li>
+                <li>monoamine oxidase (MAO) inhibitors</li>
+                <li>levodopa</li>
+                <li>steroids</li>
+                <li>fluoroquinolones</li>
+                <li>cephalosporins</li>
+                <li>beta blockers</li>
+                <li>digoxin</li>
+                <li>lithium</li>
+                <li>calcineurin inhibitors</li>
+              </ul>
+            </div>
+          </div>    <!-- closing DIV for MEDICATIONS -->
+
+          <p>hypertensive encephalopathy</p>
+
+          <!-- dropdown for METABOLIC -->
+          <p>
+            <a class="text-decoration-none dropdown-toggle" data-bs-toggle="collapse" href="#collapseMetabolic" role="button" aria-expanded="false" aria-controls="collapseMetabolic">
+              metabolic
+            </a>
+          </p>
+          <div class="collapse" id="collapseMetabolic">
+            <div class="card card-body border-0">
+              <ul>
+                <li>hepatic encephalopathy</li>
+                <li>uremic encephalopathy</li>
+                <li>Wilson's disease</li>
+              </ul>
+            </div>
+          </div>    <!-- closing DIV for METABOLIC -->
+
+        <!-- dropdown for ENDOCRINE -->
+          <p>
+            <a class="text-decoration-none dropdown-toggle" data-bs-toggle="collapse" href="#collapseEndo" role="button" aria-expanded="false" aria-controls="collapseEndo">
+              endocrine
+            </a>
+          </p>
+          <div class="collapse" id="collapseEndo">
+            <div class="card card-body border-0">
+              <ul>
+                <li>hypo- and hypernatremia</li>
+                <li>hypercalcemia</li>
+                <li>hypermagnesemia</li>
+                <li>hypophospphatemia</li>
+                <li>hypo- and hyperthyroidism</li>
+                <li>hypo- and hypercortisolemia</li>
+                <li>hypo- and hyperglycemia</li>
+              </ul>
+            </div>
+          </div>    <!-- closing DIV for ENDOCRINE -->
+
+          <!-- dropdown for RESPIRATORY -->
+          <p>
+            <a class="text-decoration-none dropdown-toggle" data-bs-toggle="collapse" href="#collapseResp" role="button" aria-expanded="false" aria-controls="collapseResp">
+              respiratory
+            </a>
+          </p>
+          <div class="collapse" id="collapseResp">
+            <div class="card card-body border-0">
+              <ul>
+                <li>hypoxia</li>
+                <li>hypercarbia</li>
+              </ul>
+            </div>
+          </div>    <!-- closing DIV for RESPIRATORY -->
+
+          <!-- dropdown for TRAUMA -->
+          <p>
+            <a class="text-decoration-none dropdown-toggle" data-bs-toggle="collapse" href="#collapseTrauma" role="button" aria-expanded="false" aria-controls="collapseTrauma">
+              trauma
+            </a>
+          </p>
+          <div class="collapse" id="collapseTrauma">
+            <div class="card card-body border-0">
+              <ul>
+                <li>concussion</li>
+                <li>subarachnoid hematoma</li>
+                <li>epidural hematoma</li>
+              </ul>
+            </div>
+          </div>    <!-- closing DIV for TRAUMA -->
+
+          <p>CVA</p>
+
+          <!-- dropdown for SEIZURE -->
+          <p>
+            <a class="text-decoration-none dropdown-toggle" data-bs-toggle="collapse" href="#collapseSeizure" role="button" aria-expanded="false" aria-controls="collapseSeizure">
+              seizure related
+            </a>
+          </p>
+          <div class="collapse" id="collapseSeizure">
+            <div class="card card-body border-0">
+              <ul>
+                <li>post-ictal state</li>
+                <li>nonconvulsive status epilepticus</li>
+              </ul>
+            </div>
+          </div>    <!-- closing DIV for SEIZURE -->
+
+          <!-- dropdown for WITHDRAWAL -->
+          <p>
+            <a class="text-decoration-none dropdown-toggle" data-bs-toggle="collapse" href="#collapseWd" role="button" aria-expanded="false" aria-controls="collapseWd">
+              withdrawal
+            </a>
+          </p>
+          <div class="collapse" id="collapseWd">
+            <div class="card card-body border-0">
+              <ul>
+                <li>alcohol</li>
+                <li>benzodiazepenes</li>
+                <li>sleeping pills</li>
+              </ul>
+            </div>
+          </div>    <!-- closing DIV for WITHDRAWAL -->
+
+          <!-- dropdown for PSYCH -->
+            <p>
+              <a class="text-decoration-none dropdown-toggle" data-bs-toggle="collapse" href="#collapsePsych" role="button" aria-expanded="false" aria-controls="collapsePsych">
+                neuropsychiatric
+              </a>
+            </p>
+            <div class="collapse" id="collapsePsych">
+              <div class="card card-body border-0">
+                <ul>
+                  <li>neuroleptic malignant syndrome</li>
+                  <li>serotonin syndrome</li>
+                </ul>
+              </div>
+            </div>    <!-- closing DIV for PSYCH -->
+
+          <!-- dropdown for AUTOIMMUNE -->
+          <p>
+            <a class="text-decoration-none dropdown-toggle" data-bs-toggle="collapse" href="#collapseAutoI" role="button" aria-expanded="false" aria-controls="collapseAutoI">
+              autoimmune
+            </a>
+          </p>
+          <div class="collapse" id="collapseAutoI">
+            <div class="card card-body border-0">
+              <ul>
+                <li>neuropsychiatric lupus</li>
+                <li>CNS vasculitis</li>
+                <li>acute disseminated encephalomyelitis</li>
+                <li>autoimmune limbic encephalitis</li>
+                <li>Behchet syndrome</li>
+              </ul>
+            </div>
+          </div>    <!-- closing DIV for AUTOIMMUNE -->
+
+          <!-- dropdown for NEOPLASM -->
+          <p>
+            <a class="text-decoration-none dropdown-toggle" data-bs-toggle="collapse" href="#collapseCA" role="button" aria-expanded="false" aria-controls="collapseCA">
+              neoplastic
+            </a>
+          </p>
+          <div class="collapse" id="collapseCA">
+            <div class="card card-body border-0">
+              <ul>
+                <li>tumor</li>
+                <li>carcinomatous meningitis</li>
+                <li>paraneoplastic limbic encephalitis</li>
+              </ul>
+            </div>
+          </div>    <!-- closing DIV for NEOPLASM -->
+
         <p>vitamin deficiencies</p>
           <ul>
             <li>thiamine</li>
             <li>vitamin B12</li>
           </ul>
-        <p>seizure-related</p>
-          <ul>
-            <li>post-ictal state</li>
-            <li>nonconvulsive status epilepticus</li>
-          </ul>
-        <p>neoplasm</p>
-          <ul>
-            <li>brain tumor</li>
-            <li>carcinomatous meningitis</li>
-            <li>paraneoplastic limbic encephalitis</li>
-          </ul>
-        <p>neuropsychiatric</p>
-        <ul>
-          <li>neuroleptic malignant syndrome (NMS)</li>
-          <li>serotonin syndrome</li>
-        </ul>
+
         <p>hematologic</p>
         <ul>
           <li>TTP</li>
         </ul>
-        <p>autoimmune</p>
-          <ul>
-            <li>neuropsychiatric lupus</li>
-            <li>CNS vasculitis</li>
-            <li>acute disseminated encephalomyelitis</li>
-            <li>Hashimoto encephalopathy</li>
-            <li>autoimmune limbic encephalitis</li>
-            <li>Behchet syndrome</li>
-          </ul>
       </div>
     </div>  <!-- closing DIV for Altered Mental Status card v2 -->
 
@@ -189,17 +330,42 @@
     <div class="card mt-3">
       <div class="card-body">
         <h3>Lumbar puncture/CSF labs checklist</h3>
-          <ul>
-            <li>cell count with differential</li>
-            <li>glucose</li>
-            <li>protein</li>
-            <li>Gram stain and culture</li>
-            <li>cytology</li>
-            <li>oligoclonal bands</li>
-            <li>Lyme</li>
-            <li>AFB</li>
-            <li>VDRL</li>
-          </ul>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkCellcount">
+            <label class="form-check-label" for="checkCellcount">cell count with differential</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkGlucose">
+            <label class="form-check-label" for="checkGlucose">glucose</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkProtein">
+            <label class="form-check-label" for="checkProtein">protein</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkGram">
+            <label class="form-check-label" for="checkGram">Gram stain and culture</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkCytology">
+            <label class="form-check-label" for="checkCytology">Cytology</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkBands">
+            <label class="form-check-label" for="checkBands">oligoclonal bands</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkLyme">
+            <label class="form-check-label" for="checkLyme">Lyme</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkAFB">
+            <label class="form-check-label" for="checkAFB">AFB</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkVDRL">
+            <label class="form-check-label" for="checkVDRL">VDRL</label>
+          </div>
       </div>
     </div>  <!-- closing DIV for LP/CSF checklist card -->
 
