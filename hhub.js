@@ -111,11 +111,15 @@ function lightsCriteria() {
   }
 
 
-  /* apply Light's Criteria */
-  if ((fProtein/sProtein)>0.5) {
+  /*  apply Light's Criteria */
+  if ((fProtein>0) && (sProtein>0) && (fProtein/sProtein)>0.5) {
     document.getElementById('LightsOutput').innerHTML = exOutput;
   }
-    else if ((fLDH/sLDH)>0.6) {
+    else if (fProtein==0 || sProtein==0) {
+      document.getElementById('LightsOutput').innerHTML = 'Please enter values for pleural fluid and serum protein';
+    }
+
+    else if ((fLDH>0) && (sLDH>0) && (fLDH/sLDH)>0.6) {
       document.getElementById('LightsOutput').innerHTML = "Pleural fluid is exudate";
     }
 
