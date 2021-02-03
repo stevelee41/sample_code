@@ -24,23 +24,36 @@
   <div class="container">
     <h1 class='mt-4'>Pulmonary</h1>
 
+    <div class="card mt-3">  <!-- opening DIV for THORACENTESIS LABS CHECKLIST card -->
+      <div class="card-body">
+        <h3 class='mt-2'>Light's Criteria</h3>
+        <p>Pleural effusion is exudate if any of the following conditions met:</p>
+        <ul>
+          <li>pleural fluid protein : serum protein > 0.5</li>
+          <li>pleural fluid LDH : serum LDH > 0.6</li>
+          <li>pleural fluid LDH > ⅔ upper limit of normal</li>
+        </ul>
+      </div>
+    </div>  <!-- closing DIV for Thoracentesis checklist card -->
+
 
     <div class="card mt-3">   <!-- opening DIV for LIGHT'S CRITERIA card -->
       <div class="card-body">
-          <form>
-            <h3 class='mt-2'>Light's Criteria Calculator</h3>
-            <!-- FLUID PROTEIN -->
-            <div class="row g-2 mt-4">
-              <div class="col-6">
-                <label for="fluidProtein" class="col-form-label">Pleural Fluid Protein</label>
-              </div>
-              <div class="col-3">
-                <input type="text" id="fluidProtein" class="form-control" aria-describedby="fluidProteinUnits">
-              </div>
-              <div class="col-3">
-                <span id="fluidProteinUnits" class="form-text">g/dL</span>
-              </div>
-            </div>    <!-- closing DIV for FLUID PROTEIN -->
+
+        <form>
+          <h3>Light's Criteria Calculator</h3>
+          <!-- FLUID PROTEIN -->
+          <div class="row g-2 mt-4">
+            <div class="col-6">
+              <label for="fluidProtein" class="col-form-label">Pleural Fluid Protein</label>
+            </div>
+            <div class="col-3">
+              <input type="text" id="fluidProtein" class="form-control" aria-describedby="fluidProteinUnits">
+            </div>
+            <div class="col-3">
+              <span id="fluidProteinUnits" class="form-text">g/dL</span>
+            </div>
+          </div>    <!-- closing DIV for FLUID PROTEIN -->
 
             <!-- FLUID LDH -->
             <div class="row g-2 mt-4">

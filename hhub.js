@@ -82,11 +82,17 @@ function lightsCriteria() {
       ['Pleural Fluid LDH', fLDH],
       ['Serum Protein', sProtein],
       ['Serum LDH', sLDH]
-
     ];
   let i = 0;
 
+  /* check that form fields are populated */
+  for (i=0; i < userLightsValues.length; i++) {
+    if (userLightsValues[i][1]=='') {
+      alert ('Please enter a value for ' + userLightsValues[i][0]);
+    }
+  }
   /* check that entered values are numeric */
+
   for (i=0; i < userLightsValues.length; i++) {
     if (isNaN(userLightsValues[i][1])) {
       alert ('Please enter a numeric value for ' + userLightsValues[i][0]);
@@ -94,7 +100,8 @@ function lightsCriteria() {
   }
 
   /* check that entered values for serum protein make sense */
-  if (sProtein < 5 || sProtein > 9) {
+  if (sProtein < 5 || sProtein > 9)
+  {
     alert ('Serum protein values are typically between 6 and 8 g/dL');
   }
 
