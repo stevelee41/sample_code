@@ -106,6 +106,57 @@
 
 
     <h2 class='mt-3'>Electrolytes</h2>
+
+    <div class="card mt-3">  <!-- opening DIV for CORRECTED CALCIUM card -->
+      <div class="card-body">
+        <h3 class='mt-2'>Corrected Calcium</h3>
+
+        <div class="row g-2 mt-4">         <!-- opening DIV for PATIENT CALCIUM -->
+          <div class="col-6">
+            <label for="ptCalcium" class="col-form-label">Patient Calcium</label>
+          </div>
+          <div class="col-3">
+            <input type="text" id="ptCalcium" class="form-control" aria-describedby="ptCalciumUnits">
+          </div>
+          <div class="col-3">
+            <span id="ptCalciumUnits" class="form-text">mg/dL</span>
+          </div>
+        </div>    <!-- closing DIV for PATIENT CALCIUM -->
+
+        <div class="row g-2 mt-4">         <!-- opening DIV for PATIENT ALBUMIN -->
+          <div class="col-6">
+            <label for="ptAlbumin" class="col-form-label">Patient Albumin</label>
+          </div>
+          <div class="col-3">
+            <input type="text" id="ptAlbumin" class="form-control" aria-describedby="ptAlbuminUnits">
+          </div>
+          <div class="col-3">
+            <span id="ptAlbuminUnits" class="form-text">mg/dL</span>
+          </div>
+        </div>    <!-- closing DIV for PATIENT ALBUMIN -->
+
+        <div class="row g-2 mt-4">         <!-- opening DIV for NORMAL ALBUMIN -->
+          <div class="col-6">
+            <label for="nlAlbumin" class="col-form-label">Normal Albumin</label>
+          </div>
+          <div class="col-3">
+            <input type="text" id="nlAlbumin" class="form-control" aria-describedby="nlAlbuminUnits">
+          </div>
+          <div class="col-3">
+            <span id="nlAlbuminUnits" class="form-text">mg/dL</span>
+          </div>
+        </div>    <!-- closing DIV for PATIENT ALBUMIN -->
+
+        <!-- BUTTON -->
+          <div class='row mt-4'>
+            <button class="btn btn-primary btn-lg col-8 mx-auto" type="button" onclick='corrCalcium()'>Calculate</button>
+          </div>
+
+
+      </div>
+    </div>  <!-- closing DIV for CORRECTED CALCIUM card -->
+
+
     <div class="card mt-3">
       <div class="card-body">
         <h3>Hyponatremia labs</h3>
