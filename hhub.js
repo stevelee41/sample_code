@@ -147,7 +147,16 @@ function corrCalcium() {
   let normalAlbumin = Number(document.getElementById('nlAlbumin').value);
 
   let correctedCalcium = (0.8 * (normalAlbumin - patientAlbumin)) + patientCalcium;
+  let correctedCalciumOutput = 'Corrected calcium is ' + correctedCalcium;
 
-  document.getElementById('corrCalciumOutput').innerHTML = 'Corrected calcium is ' + correctedCalcium;
+   /* let bigCalcium = correctedCalcium.style.fontSize = 'x-large';  */
+
+  document.getElementById('corrCalciumOutput').innerHTML = correctedCalciumOutput;
+  document.getElementById('corrCalciumOutput').style.fontSize = '1.5rem';
 
 }
+
+function clearCorrCalciumFields() {
+  document.getElementById('ptCalcium').value="";
+  document.getElementById('ptAlbumin').value="";
+}  /* closing for CLEAR LIGHTS FIELDS */
