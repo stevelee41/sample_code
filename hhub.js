@@ -130,17 +130,24 @@ function lightsCriteria() {
 } /* closing for LIGHTS CRITERIA */
 
 
-
-/* **************************************************************************
-                      CORRECTED CALCIUM
-*************************************************************************** */
-function corrCalcium() {
-
-}
-
 function clearLightsFields() {
   document.getElementById('fluidProtein').value="";
   document.getElementById('serumProtein').value="";
   document.getElementById('fluidLDH').value="";
   document.getElementById('serumLDH').value="";
 }  /* closing for CLEAR LIGHTS FIELDS */
+
+
+/* **************************************************************************
+                      CORRECTED CALCIUM
+*************************************************************************** */
+function corrCalcium() {
+  let patientCalcium = Number(document.getElementById('ptCalcium').value);
+  let patientAlbumin = Number(document.getElementById('ptAlbumin').value);
+  let normalAlbumin = Number(document.getElementById('nlAlbumin').value);
+
+  let correctedCalcium = (0.8 * (normalAlbumin - patientAlbumin)) + patientCalcium;
+
+  document.getElementById('corrCalciumOutput').innerHTML = 'Corrected calcium is ' + correctedCalcium;
+
+}
