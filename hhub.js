@@ -54,8 +54,59 @@ function goHome() {
   window.location.href = "index.html";
 }
 
+
 /* **************************************************************************
-                      LIGHT'S CRITERIA
+            FLUIDS, ELECTROLYTES, ACID/BASE: CORRECTED CALCIUM
+*************************************************************************** */
+function corrCalcium() {
+  let patientCalcium = Number(document.getElementById('ptCalcium').value);
+  let patientAlbumin = Number(document.getElementById('ptAlbumin').value);
+  let normalAlbumin = Number(document.getElementById('nlAlbumin').value);
+
+  let correctedCalcium = (0.8 * (normalAlbumin - patientAlbumin)) + patientCalcium;
+  let correctedCalciumOutput = 'Corrected calcium is ' + correctedCalcium;
+
+   /* let bigCalcium = correctedCalcium.style.fontSize = 'x-large';  */
+
+  document.getElementById('corrCalciumOutput').innerHTML = correctedCalciumOutput;
+  document.getElementById('corrCalciumOutput').style.fontSize = '1.5rem';
+
+}
+
+function clearCorrCalciumFields() {
+  document.getElementById('ptCalcium').value="";
+  document.getElementById('ptAlbumin').value="";
+}  /* closing for CLEAR LIGHTS FIELDS */
+
+
+/* **************************************************************************
+                    NEUROLOGY:
+*************************************************************************** */
+
+/* sets CHECKED value for CVA CHECKLIST checkboxes to "FALSE" */
+function clearCVAchkbox() {
+  let i=0;
+  let cvaChecklist = document.getElementsByClassName('cvaCheckbox');
+
+  for (i=0; i < cvaChecklist.length; i++) {
+    cvaChecklist[i].checked = false;
+  }
+}
+
+
+/* sets CHECKED value for LP CHECKLIST checkboxes to "FALSE" */
+function clearLPchkbox () {
+  let i=0;
+  let lpChecklist = document.getElementsByClassName('lpCheckbox');
+
+  for (i=0; i < lpChecklist.length; i++) {
+    lpChecklist[i].checked = false;
+  }
+}
+
+
+/* **************************************************************************
+                    PULMONARY: LIGHT'S CRITERIA
 *************************************************************************** */
 function lightsCriteria() {
   let fProtein = Number(document.getElementById('fluidProtein').value);
@@ -135,28 +186,4 @@ function clearLightsFields() {
   document.getElementById('serumProtein').value="";
   document.getElementById('fluidLDH').value="";
   document.getElementById('serumLDH').value="";
-}  /* closing for CLEAR LIGHTS FIELDS */
-
-
-/* **************************************************************************
-                      CORRECTED CALCIUM
-*************************************************************************** */
-function corrCalcium() {
-  let patientCalcium = Number(document.getElementById('ptCalcium').value);
-  let patientAlbumin = Number(document.getElementById('ptAlbumin').value);
-  let normalAlbumin = Number(document.getElementById('nlAlbumin').value);
-
-  let correctedCalcium = (0.8 * (normalAlbumin - patientAlbumin)) + patientCalcium;
-  let correctedCalciumOutput = 'Corrected calcium is ' + correctedCalcium;
-
-   /* let bigCalcium = correctedCalcium.style.fontSize = 'x-large';  */
-
-  document.getElementById('corrCalciumOutput').innerHTML = correctedCalciumOutput;
-  document.getElementById('corrCalciumOutput').style.fontSize = '1.5rem';
-
-}
-
-function clearCorrCalciumFields() {
-  document.getElementById('ptCalcium').value="";
-  document.getElementById('ptAlbumin').value="";
 }  /* closing for CLEAR LIGHTS FIELDS */
