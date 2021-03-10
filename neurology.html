@@ -25,7 +25,8 @@
 
     <h2 class='mb-4'>CVA and TIA</h2>
 
-    <div class="card mt-3">      <!-- opening DIV for CVA/TIA checklist card -->
+    <!-- opening DIV for CVA/TIA checklist card -->
+    <div class="card mt-3">
       <div class="card-body">
         <h3>CVA/TIA initial checklist</h3>
           <div class="form-check">
@@ -61,19 +62,20 @@
             <label class="form-check-label" for="checkBP">blood pressure control</label>
           </div>
 
-          <div class="row">
-            <div class="col">
-              <button type="button" class="btn btn-outline-primary mt-4" onclick='clearCVAchkbox()'>Clear</button>
+          <div class="row">  <!-- opening DIV for RETURN TO TOP button row -->
+            <div class="col mt-4">
+              <a class="text-decoration-none" href="javascript:clearCVAchkbox()">Clear checkboxes</a>
             </div>
-            <div class="col">
-              <a class="btn btn-outline-primary mt-4" href="#neuroNav" role="button">Back to top</a>
+            <div class="col mt-4">
+              <a class="text-decoration-none" href="#neuroNav" role="button">Back to top</a>
             </div>
           </div>  <!-- closing DIV for RETURN TO TOP button row -->
       </div>
     </div>  <!-- closing DIV for TIA/CVA checklist card -->
 
 
-    <div class="card mt-3">   <!-- opening DIV for CVA/TIA contraindications for tPA card -->
+    <!-- card for CVA/TIA contraindications for tPA -->
+    <div class="card mt-3">
       <div class="card-body">
         <h3>Contraindications to tPA</h3>
         <h4>Absolute contraindications</h4>
@@ -121,18 +123,19 @@
             <li>dementia</li>
           </ul>
 
-        <div class="row">
-          <div class="col">
-          </div>
-          <div class="col">
-            <a class="btn btn-outline-primary mt-4" href="#neuroNav" role="button">Back to top</a>
-          </div>
-        </div>  <!-- closing DIV for RETURN TO TOP button row -->
+          <div class="row">  <!-- opening DIV for RETURN TO TOP button row -->
+            <div class="col mt-4">
+            </div>
+            <div class="col mt-4">
+              <a class="text-decoration-none" href="#neuroNav" role="button">Back to top</a>
+            </div>
+          </div>  <!-- closing DIV for RETURN TO TOP button row -->
       </div>
     </div>  <!-- closing DIV for CVA/TIA  contraindications for tPA card -->
 
 
-    <div class="card mt-3">   <!-- opening DIV for ALTERED MENTAL STATUS card -->
+    <!-- card for ALTERED MENTAL STATUS -->
+    <div class="card mt-3">
       <div class="card-body">
         <h3 class='mb-4'>Causes of altered mental status</h3>
           <p>dehydration</p>
@@ -333,22 +336,31 @@
             </div>
           </div>    <!-- closing DIV for NEOPLASM -->
 
-        <p>vitamin deficiencies</p>
-          <ul>
-            <li>thiamine</li>
-            <li>vitamin B12</li>
-          </ul>
+
+          <p>
+            <a class="text-decoration-none dropdown-toggle" data-bs-toggle="collapse" href="#collapseVitDef" role="button" aria-expanded="false" aria-controls="collapseCA">
+              vitamin deficiencies
+            </a>
+          </p>
+          <div class="collapse" id="collapseVitDef">
+            <div class="card card-body border-0">
+              <ul>
+                <li>thiamine</li>
+                <li>vitamin B12</li>
+              </ul>
+            </div>
+          </div>    <!-- closing DIV for VITAMIN DEFICIENCIES -->
 
         <p>hematologic</p>
         <ul>
           <li>TTP</li>
         </ul>
 
-        <div class="row">
-          <div class="col">
+        <div class="row">  <!-- opening DIV for RETURN TO TOP button row -->
+          <div class="col mt-4">
           </div>
-          <div class="col">
-            <a class="btn btn-outline-primary mt-4" href="#neuroNav" role="button">Back to top</a>
+          <div class="col mt-4">
+            <a class="text-decoration-none" href="#neuroNav" role="button">Back to top</a>
           </div>
         </div>  <!-- closing DIV for RETURN TO TOP button row -->
 
@@ -356,6 +368,7 @@
     </div>  <!-- closing DIV for Altered Mental Status card v2 -->
 
 
+    <!-- card for LP CHECKLIST -->
     <div class="card mt-3">
       <div class="card-body">
         <h3>Lumbar puncture/CSF labs checklist</h3>
@@ -396,12 +409,12 @@
             <label class="form-check-label" for="checkVDRL">VDRL</label>
           </div>
 
-          <div class="row">
-            <div class="col">
-              <button type="button" class="btn btn-outline-primary mt-4" onclick='clearLPchkbox()'>Clear</button>
+          <div class="row">  <!-- opening DIV for RETURN TO TOP button row -->
+            <div class="col mt-4">
+              <a class="text-decoration-none" href="javascript:clearLPchkbox()">Clear checkboxes</a>
             </div>
-            <div class="col">
-              <a class="btn btn-outline-primary mt-4" href="#neuroNav" role="button">Back to top</a>
+            <div class="col mt-4">
+              <a class="text-decoration-none" href="#neuroNav" role="button">Back to top</a>
             </div>
           </div>  <!-- closing DIV for RETURN TO TOP button row -->
 
@@ -409,6 +422,7 @@
     </div>  <!-- closing DIV for LP/CSF checklist card -->
 
 
+  <!-- card for OPTHO EMERGENCIES -->
     <div class="card mt-3">
       <div class="card-body">
         <h3>Ophthalmologic emergencies</h3>
@@ -423,11 +437,11 @@
           <li>orbital cellulitis</li>
         </ul>
 
-        <div class="row">
-          <div class="col">
+        <div class="row">  <!-- opening DIV for RETURN TO TOP button row -->
+          <div class="col mt-4">
           </div>
-          <div class="col">
-            <a class="btn btn-outline-primary mt-4" href="#neuroNav" role="button">Back to top</a>
+          <div class="col mt-4">
+            <a class="text-decoration-none" href="#neuroNav" role="button">Back to top</a>
           </div>
         </div>  <!-- closing DIV for RETURN TO TOP button row -->
 
