@@ -1,0 +1,201 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Hello, world!</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="myStyles.css">
+</head>
+
+<body>
+  <!-- ***************************************************************************************** -->
+  <!-- *****                                NAVBAR                                         ***** -->
+  <!-- ***************************************************************************************** -->
+
+  <!-- ***************************************************************************************** -->
+  <!-- *****                             MAIN CONTENT                                      ***** -->
+  <!-- ***************************************************************************************** -->
+
+  <div class="container">
+    <h1>Electrolytes and acid-base</h1>
+      <h2>Acid-base</h2>
+        <h3>Metabolic acidosis</h3>
+        <div class="card mt-3">
+          <div class="card-body">
+            <h4>Anion gap metabolic acidosis</h4>
+            <h4>MUDPILES</h4>
+              <ul>
+                <li>M: methanol</li>
+                <li>U: uremia</li>
+                <li>D: DKA</li>
+                <li>P: paracetamol</li>
+                <li>I: iron, isoniazid</li>
+                <li>L: lactic acidosis</li>
+                <li>E: ethylene glycol</li>
+                <li>S: salicylate</li>
+              </ul>
+            <h4>GOLDMARK</h4>
+            <ul>
+              <li>G: glycols</li>
+              <li>O: oxoproline</li>
+              <li>L: L-lactate</li>
+              <li>D: D-lactate</li>
+              <li>M: methanol</li>
+              <li>A: aspirin</li>
+              <li>R: renal failure</li>
+              <li>K: ketoacidosis</li>
+            </ul>
+        </div>
+      </div>  <!-- closing DIV for LACTIC ACIDOSIS card -->
+
+
+          <div class="card mt-3">
+            <div class="card-body">
+            <h5>lactic acidosis</h5>
+            <h5>due to inadequate O2 delivery</h5>
+              <p>anaerobic muscle activity</p>
+              <ul>
+                <li>heavy exercise</li>
+                <li>generalized convulsions</li>
+              </ul>
+              <p>tissue hypoperfusion</p>
+              <ul>
+                <li>shock</li>
+                <li>cardiac arrest</li>
+                <li>regional hypoperfusion (mesenteric ischemia)</li>
+              </ul>
+            <h5>not due to inadequate O2 delivery</h5>
+              <p>associated with underlying disease</p>
+              <ul>
+                <li>leukemia</li>
+                <li>lymphoma</li>
+                <li>thiamine deficiency</li>
+                <li>infection</li>
+                <li>pancreatitis</li>
+                <li>short bowel syndrome</li>
+                <li>diabetic/DKA</li>
+                <li>organ failure (hepatic, renal)</li>
+              </ul>
+            <p>associated with medications and toxins</p>
+            <p>medications</p>
+              <ul>
+                  <li>biguanides (metformin)</li>
+                  <li>NRTI</li>
+                  <li>INH</li>
+                  <li>B2-agonists</li>
+                  <li>propofol</li>
+                  <li>linezolid</li>
+                  <li>theophylline</li>
+              </ul>
+            </div>
+          </div>  <!-- closing DIV for LACTIC ACIDOSIS card -->
+
+
+          <div class="card mt-3">
+            <div class="card-body">
+              <h4>Non-anion gap metabolic acidosis</h4>
+              <h5>GI losses of HCO3</h5>
+              <h5>Renal losses of HCO3</h5>
+            </div>
+          </div>  <!-- closing DIV for LACTIC ACIDOSIS card -->
+
+
+    <h2 class='mt-3'>Electrolytes</h2>
+
+    <div class="card mt-3">  <!-- opening DIV for CORRECTED CALCIUM card -->
+      <div class="card-body">
+        <h3 class='mt-2'>Corrected Calcium</h3>
+
+        <div class="row g-2 mt-4">         <!-- opening DIV for PATIENT CALCIUM -->
+          <div class="col-6">
+            <label for="ptCalcium" class="col-form-label">Patient Calcium</label>
+          </div>
+          <div class="col-3">
+            <input type="text" id="ptCalcium" class="form-control" aria-describedby="ptCalciumUnits">
+          </div>
+          <div class="col-3">
+            <span id="ptCalciumUnits" class="form-text">mg/dL</span>
+          </div>
+        </div>    <!-- closing DIV for PATIENT CALCIUM -->
+
+        <div class="row g-2 mt-4">         <!-- opening DIV for PATIENT ALBUMIN -->
+          <div class="col-6">
+            <label for="ptAlbumin" class="col-form-label">Patient Albumin</label>
+          </div>
+          <div class="col-3">
+            <input type="text" id="ptAlbumin" class="form-control" aria-describedby="ptAlbuminUnits">
+          </div>
+          <div class="col-3">
+            <span id="ptAlbuminUnits" class="form-text">mg/dL</span>
+          </div>
+        </div>    <!-- closing DIV for PATIENT ALBUMIN -->
+
+        <div class="row g-2 mt-4">         <!-- opening DIV for NORMAL ALBUMIN -->
+          <div class="col-6">
+            <label for="nlAlbumin" class="col-form-label">Normal Albumin</label>
+          </div>
+          <div class="col-3">
+            <input type="text" id="nlAlbumin" class="form-control" aria-describedby="nlAlbuminUnits">
+          </div>
+          <div class="col-3">
+            <span id="nlAlbuminUnits" class="form-text">mg/dL</span>
+          </div>
+        </div>    <!-- closing DIV for PATIENT ALBUMIN -->
+
+        <!-- BUTTON -->
+          <div class='row mt-4'>
+            <button class="btn btn-primary btn-lg col-8 mx-auto" type="button" onclick='corrCalcium()'>Calculate</button>
+          </div>
+
+          <div class='row mt-2'>
+            <button class="btn btn-outline-secondary btn-lg col-8 mx-auto" type="button" onclick='clearCorrCalciumFields()'>Clear fields</button>
+          </div>
+
+          <div class="alert alert-info mt-4" role="alert" id='corrCalciumOutput'>
+            <p>Corrected calcium is:</p>
+          </div>
+
+
+
+      </div>
+    </div>  <!-- closing DIV for CORRECTED CALCIUM card -->
+
+
+    <div class="card mt-3">
+      <div class="card-body">
+        <h3>Hyponatremia labs</h3>
+          <p>urine studies</p>
+          <ul>
+            <li>urine osmolality</li>
+            <li>urine sodium</li>
+            <li>urine creatinine</li>
+          </ul>
+          <p>serum studies</p>
+          <ul>
+            <li>serum osmolality</li>
+            <li>serum sodium</li>
+            <li>serum creatinine</li>
+            <li>TSH</li>
+            <li>cortisol</li>
+          </ul>
+      </div>
+    </div>  <!-- closing DIV for hyponatremia labs card -->
+
+
+    <button type="button" class="mt-3 btn btn-primary btn-lg" onclick='goHome()'>Back to homepage</button>
+
+  </div>  <!-- closing DIV for CONTAINER -->
+
+
+
+  <!-- *************** JAVASCRIPT ***************  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src='hhub.js'></script>
+  </body>
+</html>
