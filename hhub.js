@@ -22,6 +22,9 @@ function goToID () {
   window.location.href = "infectious_disease.html";
 }
 
+function goToMSK () {
+  window.location.href = "MSK.html";
+}
 function goToNeuro () {
   window.location.href = "neurology.html";
 }
