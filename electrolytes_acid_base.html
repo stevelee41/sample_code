@@ -66,29 +66,121 @@
 
     <!-- **********************************  MAIN CONTENT  ********************************************* -->
 
-  <div class='border border-primary my-4 p-4'>
+  <div class='border border-primary my-4 p-3'>
     <h1>Acid base</h1>
       <h2>Metabolic acidosis</h2>
-        <h3 class='ps-2'>Anion gap metabolic acidosis</h3>
-          <h4 class='ps-4'>MUDPILES</h4>
-            <ul class='ps-5'>
-              <li>M: methanol</li>
-              <li>U: uremia</li>
-              <li>D: DKA</li>
-              <li>P: paracetamol</li>
-              <li>I: iron, isoniazid</li>
-              <li>L: lactic acidosis</li>
-              <li>E: ethylene glycol</li>
-              <li>S: salicylate</li>
-            </ul>
-        <h3 class='ps-2'>Non-anion gap metabolic acidosis</h3>
-          <h4 class='ps-4'>GI losses of HCO3</h4>
-          <h4 class='ps-4'>Renal losses of HCO3</h4>
+        <h3 class='ps-2 py-2'>Anion gap metabolic acidosis</h3>
+          <h4 class='ps-1 py-2'>MUDPILES</h4>
+
+          <!-- Accordion for MUDPILES  -->
+          <div class="accordion accordion-flush" id="accordionFlushMUDPILES">
+            <div class="accordion-item">
+              <!--  METHANOL -->
+              <h2 class="accordion-header" id="flush-headingMethanol">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMethanol" aria-expanded="false" aria-controls="flush-collapseMethanol">
+                  M: methanol
+                </button>
+              </h2>
+              <div id="flush-collapseMethanol" class="accordion-collapse collapse" aria-labelledby="flush-headingMethanol" data-bs-parent="#accordionFlushMUDPILES">
+                <div class="accordion-body">Placeholder content for this accordion</div>
+              </div>
+            </div>    <!-- closing DIV for Methanol -->
+
+            <!--  UREMIA -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingUremia">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseUremia" aria-expanded="false" aria-controls="flush-collapseUremia">
+                U: uremia
+                </button>
+              </h2>
+              <div id="flush-collapseUremia" class="accordion-collapse collapse" aria-labelledby="flush-headingUremia" data-bs-parent="#accordionFlushMUDPILES">
+                <div class="accordion-body">Placeholder content for this accordion</div>
+              </div>
+            </div>    <!-- closing DIV for UREMIA -->
+
+          <!--  DKA -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingDKA">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseDKA" aria-expanded="false" aria-controls="flush-collapseDKA">
+              D: diabetic ketoacidosis
+              </button>
+            </h2>
+            <div id="flush-collapseDKA" class="accordion-collapse collapse" aria-labelledby="flush-headingDKA" data-bs-parent="#accordionFlushMUDPILES">
+              <div class="accordion-body">Placeholder content for this accordion</div>
+            </div>
+          </div>    <!-- closing DIV for DKA -->
+
+          <!--  PARACETAMOL -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingParacetamol">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseParacetamol" aria-expanded="false" aria-controls="flush-collapseParacetamol">
+              P: paracetamol
+              </button>
+            </h2>
+            <div id="flush-collapseParacetamol" class="accordion-collapse collapse" aria-labelledby="flush-headingParacetamol" data-bs-parent="#accordionFlushMUDPILES">
+              <div class="accordion-body">Placeholder content for this accordion</div>
+            </div>
+          </div>    <!-- closing DIV for PARACETAMOL -->
+
+          <!--  INH/IRON -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingINH">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseINH" aria-expanded="false" aria-controls="flush-collapseINH">
+              I: isoniazid, iron
+              </button>
+            </h2>
+            <div id="flush-collapseINH" class="accordion-collapse collapse" aria-labelledby="flush-headingINH" data-bs-parent="#accordionFlushMUDPILES">
+              <div class="accordion-body">Placeholder content for this accordion</div>
+            </div>
+          </div>    <!-- closing DIV for INH/IRON -->
+
+          <!--  LACTIC -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingLactate">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseLactate" aria-expanded="false" aria-controls="flush-collapseLactate">
+              L: lactic acidosis
+              </button>
+            </h2>
+            <div id="flush-collapseLactate" class="accordion-collapse collapse" aria-labelledby="flush-headingLactate" data-bs-parent="#accordionFlushMUDPILES">
+              <div class="accordion-body">Placeholder content for this accordion</div>
+            </div>
+          </div>    <!-- closing DIV for LACTATE -->
+
+          <!--  ETOH -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingETOH">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseETOH" aria-expanded="false" aria-controls="flush-collapseETOH">
+              E: ethanol, ethylene glycol
+              </button>
+            </h2>
+            <div id="flush-collapseETOH" class="accordion-collapse collapse" aria-labelledby="flush-headingETOH" data-bs-parent="#accordionFlushMUDPILES">
+              <div class="accordion-body">Placeholder content for this accordion</div>
+            </div>
+          </div>    <!-- closing DIV for ETOH -->
+
+          <!--  SALYCILATES  -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingASA">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseASA" aria-expanded="false" aria-controls="flush-collapseASA">
+              S: salicylates
+              </button>
+            </h2>
+            <div id="flush-collapseASA" class="accordion-collapse collapse" aria-labelledby="flush-headingASA" data-bs-parent="#accordionFlushMUDPILES">
+              <div class="accordion-body">Placeholder content for this accordion</div>
+            </div>
+          </div>    <!-- closing DIV for ASA -->
+
+    </div>    <!-- closing DIV for MUDPILES accordion -->
+
+    <h3 class='ps-2 py-2'>Non-anion gap metabolic acidosis</h3>
+      <h4 class='ps-4'>GI losses of HCO3</h4>
+      <h4 class='ps-4'>Renal losses of HCO3</h4>
     <hr/>
       <h2 class='ps-2'>Metabolic alkalosis</h2>
         <h3 class='ps-4'>Chloride-sensitive metabolic alkalosis</h3>
         <h3 class='ps-4'>Chloride-resistant metabolic alkalosis</h3>
-  </div>
+
+  </div>  <!--  closing DIV for ACID BASE  -->
 
 
     <h1>Electrolytes and acid-base</h1>
