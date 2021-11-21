@@ -5,6 +5,10 @@ function goToChecklists () {
 function goToTest () {
   window.location.href = "test.html";
 }
+
+function goToWellness () {
+  window.location.href = "Wellness.html";
+}
 function goToCOVID19 () {
   window.location.href = "COVID19.html";
 }
