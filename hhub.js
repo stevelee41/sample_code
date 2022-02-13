@@ -6,7 +6,7 @@ function goToTest () {
   window.location.href = "test.html";
 }
 
-function goToWellness () {
+function goToWell () {
   window.location.href = "Wellness.html";
 }
 function goToCOVID19 () {
