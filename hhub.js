@@ -2,6 +2,11 @@ function goToChecklists () {
   window.location.href = "clinical_checklists.html";
 }
 
+
+function goToWellness () {
+  window.location.href = "wellness.html";
+}
+
 function goToTest () {
   window.location.href = "test.html";
 }
