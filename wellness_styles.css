@@ -1,0 +1,9 @@
+body {
+  background-color: #ccf2ff;
+  background-image: linear-gradient(to right, violet, cyan);
+}
+
+
+#dailyCheckinCard {
+  opacity: 0.6;
+}
