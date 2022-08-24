@@ -65,6 +65,11 @@ function goToGI () {
   window.location.href = "gastroenterology.html";
 }
 
+
+function goToAGAcidosis () {
+  window.location.href = "metabolic_acidosis_with_accordion.html";
+}
+
 function goHome() {
   window.location.href = "index.html";
 }
