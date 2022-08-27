@@ -12,14 +12,17 @@
 
       <h1 class="mb-5">Anion Gap Metabolic Acidosis</h1>
 
-      <div class="accordion accordion-flush px-4" id="accordionFlushMUDPILES">
+      <div class="accordion" id="accordionMUDPILES">
         <div class="accordion-item">  <!-- ACCORDION ITEM for METHANOL -->
-          <h2 class="accordion-header" id="flush-headingMethanol">  <!-- HEADER for METHANOL -->
+          <h2 class="accordion-header" id="headingMethanol">  <!-- HEADER for METHANOL -->
             <div class="row">
-              <div class="col-2 bg-primary text-light text-center p-2 border border-light border-3">M</div>
+              <div class="col-2">
+                <button type="button" data-bs-toggle="collapse" class="bg-primary text-light text-center border border-0 w-100 h-100"
+                  data-bs-target="#accordion-methanol" aria-expanded="false" aria-controls="accordion-methanol">M</button>
+              </div>
               <div class="col-10">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-methanol" aria-expanded="false"
-                   aria-controls="flush-methanol">methanol</button>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-methanol" aria-expanded="false"
+                   aria-controls="accordion-methanol">methanol</button>
               </div>
             </div>  <!-- closing DIV for ROW -->
           </h2>
@@ -27,7 +30,7 @@
           <div class="row">    <!-- ACCORDION BODY for METHANOL -->
             <div class="col-2"></div>
             <div class="col-10">
-              <div id="flush-methanol" class="accordion-collapse collapse" aria-labelledby="flush-flush-headingMethanol" data-bs-parent="#accordionFlushMUDPILES">
+              <div id="accordion-methanol" class="accordion-collapse collapse" aria-labelledby="headingMethanol" data-bs-parent="#accordionMUDPILES">
                 <div class="accordion-body">
                   Think methanol poisoning with:
                   <ul>
@@ -43,12 +46,15 @@
 
 
         <div class="accordion-item">  <!-- ACCORDION ITEM for UREMIA -->
-          <h2 class="accordion-header" id="flush-headingUremia">
+          <h2 class="accordion-header" id="headingUremia">
             <div class="row">
-              <div class="col-2 bg-primary text-light text-center p-2 border border-light border-3">U</div>
+              <div class="col-2">
+                <button type="button" data-bs-toggle="collapse" class="bg-primary text-light text-center border border-0 w-100 h-100"
+                  data-bs-target="#accordion-uremia" aria-expanded="false" aria-controls="accordion-uremia">U</button>
+              </div>
               <div class="col-10">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-uremia" aria-expanded="false"
-                  aria-controls="flush-uremia">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-uremia" aria-expanded="false"
+                  aria-controls="accordion-uremia">
                   uremia
                 </button>
               </div>
@@ -58,7 +64,7 @@
             <div class="row">    <!-- ACCORDION BODY for UREMIA -->
               <div class="col-2"></div>
               <div class="col-10">
-                <div id="flush-uremia" class="accordion-collapse collapse" aria-labelledby="flush-headingUremia" data-bs-parent="#accordionMUDPILES">
+                <div id="accordion-uremia" class="accordion-collapse collapse" aria-labelledby="headingUremia" data-bs-parent="#accordionMUDPILES">
                   <div class="accordion-body">really renal failure</div>
                 </div>
               </div>
@@ -67,12 +73,15 @@
 
 
         <div class="accordion-item">  <!-- ACCORDION ITEM for DKA -->
-          <h2 class="accordion-header" id="flush-headingDKA">
+          <h2 class="accordion-header" id="headingDKA">
             <div class="row">
-              <div class="col-2 bg-primary text-light text-center p-2 border border-light border-3">D</div>
+              <div class="col-2">
+                <button type="button" data-bs-toggle="collapse" class="bg-primary text-light text-center border border-0 w-100 h-100"
+                  data-bs-target="#accordion-DKA" aria-expanded="false" aria-controls="accordion-DKA">D</button>
+              </div>
               <div class="col-10">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-DKA" aria-expanded="false"
-                  aria-controls="flush-DKA">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-DKA" aria-expanded="false"
+                  aria-controls="accordion-DKA">
                   DKA: diabetic ketoacidosis
                 </button>
               </div>
@@ -82,7 +91,7 @@
             <div class="row">    <!-- ACCORDION BODY for DKA -->
               <div class="col-2"></div>
               <div class="col-10">
-                <div id="flush-DKA" class="accordion-collapse collapse" aria-labelledby="flush-headingDKA" data-bs-parent="#accordionMUDPILES">
+                <div id="accordion-DKA" class="accordion-collapse collapse" aria-labelledby="headingDKA" data-bs-parent="#accordionMUDPILES">
                   <div class="accordion-body">
                     to diagnose DKA, need to meet these criteria:
                     <ul>
@@ -99,13 +108,16 @@
 
 
         <div class="accordion-item">  <!-- ACCORDION ITEM for PARACETAMOL -->
-          <h2 class="accordion-header" id="flush-headingParacetamol">
+          <h2 class="accordion-header" id="headingParacetamol">
             <div class="row">
-              <div class="col-2 bg-primary text-light text-center p-2 border border-light border-3">P</div>
+              <div class="col-2">
+                <button type="button" data-bs-toggle="collapse" class="bg-primary text-light text-center border border-0 w-100 h-100"
+                  data-bs-target="#accordion-paracetamol" aria-expanded="false" aria-controls="accordion-paracetamol">P</button>
+                </div>
               <div class="col-10">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-paracetamol" aria-expanded="false"
-                  aria-controls="flush-paracetamol">
-                  Paracetamol, paraldehyde
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-paracetamol" aria-expanded="false"
+                  aria-controls="accordion-paracetamol">
+                  paracetamol, paraldehyde
                 </button>
               </div>
               </div>  <!-- closing DIV for ROW -->
@@ -114,7 +126,7 @@
             <div class="row">    <!-- ACCORDION BODY for PARACETAMOL -->
               <div class="col-2"></div>
               <div class="col-10">
-                <div id="flush-paracetamol" class="accordion-collapse collapse" aria-labelledby="flush-headingParacetamol" data-bs-parent="#accordionMUDPILES">
+                <div id="accordion-paracetamol" class="accordion-collapse collapse" aria-labelledby="headingParacetamol" data-bs-parent="#accordionMUDPILES">
                   <div class="accordion-body">paracetamol = acetaminophen</div>
                 </div>
               </div>
@@ -123,12 +135,15 @@
 
 
         <div class="accordion-item">  <!-- ACCORDION ITEM for INH -->
-          <h2 class="accordion-header" id="flush-headingINH">
+          <h2 class="accordion-header" id="headingINH">
             <div class="row">
-              <div class="col-2 bg-primary text-light text-center p-2 border border-light border-3">I</div>
+              <div class="col-2">
+                <button type="button" data-bs-toggle="collapse" class="bg-primary text-light text-center border border-0 w-100 h-100"
+                  data-bs-target="#accordion-INH" aria-expanded="false" aria-controls="accordion-INH">I</button>
+              </div>
               <div class="col-10">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-INH" aria-expanded="false"
-                  aria-controls="flush-INH">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-INH" aria-expanded="false"
+                  aria-controls="accordion-INH">
                   isoniazid, iron overload
                 </button>
               </div>
@@ -138,7 +153,7 @@
             <div class="row">    <!-- ACCORDION BODY for INH -->
               <div class="col-2"></div>
               <div class="col-10">
-                <div id="flush-INH" class="accordion-collapse collapse" aria-labelledby="flush-headingINH" data-bs-parent="#accordionMUDPILES">
+                <div id="accordion-INH" class="accordion-collapse collapse" aria-labelledby="headingINH" data-bs-parent="#accordionMUDPILES">
                   <div class="accordion-body">isoniazid, iron overload</div>
                 </div>
               </div>
@@ -147,12 +162,15 @@
 
 
         <div class="accordion-item">  <!-- ACCORDION ITEM for LACTIC ACIDOSIS -->
-          <h2 class="accordion-header" id="flush-headingLactic">
+          <h2 class="accordion-header" id="headingLactic">
             <div class="row">
-              <div class="col-2 bg-primary text-light text-center p-2 border border-light border-3">L</div>
+              <div class="col-2">
+                <button type="button" data-bs-toggle="collapse" class="bg-primary text-light text-center border border-0 w-100 h-100"
+                  data-bs-target="#accordion-lactic" aria-expanded="false" aria-controls="accordion-lactic">L</button>
+              </div>
               <div class="col-10">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-lactic" aria-expanded="false"
-                  aria-controls="flush-lactic">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-lactic" aria-expanded="false"
+                  aria-controls="accordion-lactic">
                   lactic acidosis
                 </button>
               </div>
@@ -162,7 +180,7 @@
             <div class="row">    <!-- ACCORDION BODY for LACTIC ACIDOSIS -->
               <div class="col-2"></div>
               <div class="col-10">
-                <div id="flush-lactic" class="accordion-collapse collapse" aria-labelledby="flush-headingLactic" data-bs-parent="#accordionMUDPILES">
+                <div id="accordion-lactic" class="accordion-collapse collapse" aria-labelledby="headingLactic" data-bs-parent="#accordionMUDPILES">
                   <div class="accordion-body">
                     Type A <br>
                     Type B
@@ -174,12 +192,15 @@
 
 
         <div class="accordion-item">  <!-- ACCORDION ITEM for ETHYLENE GLYCOL -->
-          <h2 class="accordion-header" id="flush-headingEthylene">
+          <h2 class="accordion-header" id="headingEthylene">
             <div class="row">
-              <div class="col-2 bg-primary text-light text-center p-2 border border-light border-3">E</div>
+              <div class="col-2">
+                <button type="button" data-bs-toggle="collapse" class="bg-primary text-light text-center border border-0 w-100 h-100"
+                  data-bs-target="#accordion-ethylene" aria-expanded="false" aria-controls="accordion-ethylene">E</button>
+              </div>
               <div class="col-10">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-ethylene" aria-expanded="false"
-                  aria-controls="flush-ethylene">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-ethylene" aria-expanded="false"
+                  aria-controls="accordion-ethylene">
                   ethylene glycol, ethanol
                 </button>
               </div>
@@ -189,7 +210,7 @@
             <div class="row">    <!-- ACCORDION BODY for ETHYLENE GLYCOL -->
               <div class="col-2"></div>
               <div class="col-10">
-                <div id="flush-ethylene" class="accordion-collapse collapse" aria-labelledby="flush-headingEthylene" data-bs-parent="#accordionMUDPILES">
+                <div id="accordion-ethylene" class="accordion-collapse collapse" aria-labelledby="headingEthylene" data-bs-parent="#accordionMUDPILES">
                   <div class="accordion-body">
                     ethylene glycol but also<br>
                     EtOH (alcoholic ketoacidosis)
@@ -201,13 +222,16 @@
 
 
         <div class="accordion-item">  <!-- ACCORDION ITEM for SALICYLATE -->
-          <h2 class="accordion-header" id="flush-headingSalicylate">
+          <h2 class="accordion-header" id="headingSalicylate">
             <div class="row">
-              <div class="col-2 bg-primary text-light text-center p-2 border border-light border-3">S</div>
+              <div class="col-2">
+                <button type="button" data-bs-toggle="collapse" class="bg-primary text-light text-center border border-0 w-100 h-100"
+                  data-bs-target="#accordion-salicylate" aria-expanded="false" aria-controls="accordion-salicylate">S</button>
+              </div>
               <div class="col-10">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-salicylate" aria-expanded="false"
-                  aria-controls="flush-salicylate">
-                  Salicylates
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-salicylate" aria-expanded="false"
+                  aria-controls="accordion-salicylate">
+                  salicylates
                 </button>
               </div>
               </div>  <!-- closing DIV for ROW -->
@@ -216,7 +240,7 @@
             <div class="row">    <!-- ACCORDION BODY for SALICYLATE -->
               <div class="col-2"></div>
               <div class="col-10">
-                <div id="flush-salicylate" class="accordion-collapse collapse" aria-labelledby="flush-headingSalicylate" data-bs-parent="#accordionMUDPILES">
+                <div id="accordion-salicylate" class="accordion-collapse collapse" aria-labelledby="headingSalicylate" data-bs-parent="#accordionMUDPILES">
                   <div class="accordion-body">
                     watch for concurrent respiratory alkalosis
                   </div>
